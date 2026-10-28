@@ -1,0 +1,312 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>FSS ARAM Championship 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: one reading column, Howling Abyss palette (frost, deep navy, rune gold). Schedule and bracket carry the visual weight. */
+:root{
+  --bg:#f5faf6; --surface:#ffffff; --sunk:#e6f1e8; --fg:#10231a; --muted:#4d6657; --line:#cfe0d3;
+  --accent:#1b8a4b; --accent-ink:#ffffff; --gold:#2f7a2a; --gold-soft:#e4f3e1; --ok:#1b8a4b;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Be Vietnam Pro",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#08130d; --surface:#102016; --sunk:#0b180f; --fg:#e8f4ec; --muted:#98b3a2; --line:#21382a;
+  --accent:#4ade80; --accent-ink:#04140a; --gold:#a3e635; --gold-soft:#16260f; --ok:#4ade80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#08130d; --surface:#102016; --sunk:#0b180f; --fg:#e8f4ec; --muted:#98b3a2; --line:#21382a;
+  --accent:#4ade80; --accent-ink:#04140a; --gold:#a3e635; --gold-soft:#16260f; --ok:#4ade80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body);padding-block:0 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:920px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05;letter-spacing:.01em}
+.hero{padding-block:56px 32px;border-bottom:1px solid var(--line)}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(44px,9vw,84px);font-weight:700;text-transform:uppercase;margin-top:14px}
+h1 span{color:var(--accent)}
+.lead{max-width:62ch;color:var(--muted);font-size:17px;margin:18px 0 0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:30px}
+.facts div{background:var(--surface);padding:14px 16px;min-width:0}
+.facts b{display:block;font:700 28px/1.1 var(--display);color:var(--fg)}
+.facts small{color:var(--muted);font-size:13px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding-block:8px;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+nav a{flex:none;color:var(--muted);text-decoration:none;font-size:13px;padding:6px 10px;border-radius:4px}
+nav a:hover,nav a:focus-visible{background:var(--sunk);color:var(--fg);outline:none}
+section{padding-block:44px 8px}
+h2{font-size:clamp(30px,5vw,40px);font-weight:700;text-transform:uppercase;margin-bottom:6px}
+h2 small{display:block;font:500 12px/1 var(--mono);letter-spacing:.14em;color:var(--gold);margin-bottom:10px}
+h3{font-size:22px;font-weight:600;margin:28px 0 10px;text-transform:uppercase}
+p{margin:12px 0;max-width:68ch}
+.note{background:var(--gold-soft);border-left:3px solid var(--gold);padding:12px 16px;margin:16px 0;font-size:15px;max-width:68ch}
+.tw{overflow-x:auto;border:1px solid var(--line);background:var(--surface);margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--sunk);font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500}
+.t{font-family:var(--mono);font-size:13px;white-space:nowrap;color:var(--accent)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.cmp>div{background:var(--surface);border:1px solid var(--line);padding:16px 18px;min-width:0}
+.cmp .pick{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.tag{display:inline-block;font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:4px 7px;margin-bottom:8px}
+.cmp ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.groups{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grp{background:var(--surface);border:1px solid var(--line);padding:14px 16px}
+.grp h3{margin:0 0 8px;color:var(--accent)}
+.grp li{font-family:var(--mono);font-size:14px;list-style:none;padding:5px 0;border-bottom:1px dashed var(--line)}
+.grp ul{margin:0;padding:0}
+.bracket{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.m{background:var(--surface);border:1px solid var(--line);padding:12px 14px;font-size:14px}
+.m i{display:block;font:500 11px/1 var(--mono);color:var(--gold);letter-spacing:.1em;text-transform:uppercase;font-style:normal;margin-bottom:6px}
+.m.final{border-color:var(--gold);background:var(--gold-soft)}
+.tabs{display:flex;gap:6px;margin-top:16px}
+.tabs button{font:600 14px var(--body);padding:9px 16px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.bud{margin:14px 0;background:var(--surface);border:1px solid var(--line);padding:6px 18px}
+.row{display:grid;grid-template-columns:minmax(130px,1.3fr) 3fr 90px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.row:last-child{border:0;font-weight:600}
+.bar{height:10px;background:var(--sunk)}
+.bar i{display:block;height:100%;background:var(--accent)}
+.row span:last-child{font-family:var(--mono);text-align:right}
+ol.tl{list-style:none;margin:16px 0;padding:0 0 0 20px;border-left:2px solid var(--line)}
+ol.tl li{position:relative;padding:0 0 18px 18px}
+ol.tl li::before{content:"";position:absolute;left:-28px;top:7px;width:10px;height:10px;background:var(--accent);border:2px solid var(--bg)}
+ol.tl b{font-family:var(--mono);font-size:13px;color:var(--gold);display:block}
+.chk{list-style:none;padding:0;margin:14px 0}
+.chk li{padding:0}
+.chk label{display:flex;gap:12px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);margin-bottom:-1px;cursor:pointer;font-size:15px}
+.chk input{width:18px;height:18px;accent-color:var(--accent);flex:none;margin-top:3px}
+.chk input:checked+span{color:var(--muted);text-decoration:line-through}
+ul.plain{padding-left:20px;max-width:68ch}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media (max-width:640px){.cmp,.groups{grid-template-columns:1fr}.bracket{grid-template-columns:1fr}.row{grid-template-columns:1fr 70px}.row .bar{grid-column:1/-1;order:3}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Giải đấu nội bộ · LMHT ARAM 5v5</div>
+  <h1>FSS ARAM <span>Championship</span> 2026</h1>
+  <p class="lead">Đề xuất tổ chức giải LMHT ARAM 5v5 nội bộ cho 8 đội (40–56 người), thi đấu vòng bảng rồi playoffs trong 2 buổi tối, ngân sách khoảng 6 triệu đồng. Mục tiêu: tạo sân chơi giao lưu giữa các phòng ban, vui vẻ nhưng vẫn cạnh tranh.</p>
+  <div class="facts">
+    <div><b>8 đội</b><small>40–56 người</small></div>
+    <div><b>2 bảng</b><small>mỗi bảng 4 đội</small></div>
+    <div><b>2 buổi tối</b><small>từ 18:30, sau giờ làm</small></div>
+    <div><b>~6.000.000đ</b><small>giải thưởng, ăn nhẹ, truyền thông</small></div>
+  </div>
+</header>
+
+<nav aria-label="Mục lục">
+  <a href="#de-xuat">Đề xuất</a><a href="#the-thuc">Thể thức</a><a href="#so-do">Sơ đồ</a><a href="#lich">Lịch trình</a><a href="#dieu-le">Điều lệ</a><a href="#nhan-su">Nhân sự</a><a href="#ngan-sach">Ngân sách</a><a href="#trien-khai">Triển khai</a><a href="#checklist">Checklist</a>
+</nav>
+
+<section id="de-xuat">
+  <h2><small>TỔNG QUAN</small>Đề xuất trình công ty</h2>
+  <p>Tổ chức vòng bảng ở buổi 1, dành buổi 2 cho bán kết và chung kết: cả 8 đội đều được giao lưu, đồng thời tạo không khí như một sự kiện esports nội bộ thu nhỏ.</p>
+  <div class="tw"><table>
+    <tr><th>Nội dung</th><th>Đề xuất</th></tr>
+    <tr><td>Quy mô</td><td>8 đội, 40–56 người</td></tr>
+    <tr><td>Thể thức</td><td>2 bảng, mỗi bảng 4 đội</td></tr>
+    <tr><td>Thi đấu</td><td>ARAM 5v5</td></tr>
+    <tr><td>Vòng bảng / Bán kết</td><td>BO1</td></tr>
+    <tr><td>Chung kết</td><td>BO3</td></tr>
+    <tr><td>Thời gian</td><td>2 buổi tối, mỗi buổi khoảng 4–4,5 giờ, bắt đầu 18:30</td></tr>
+    <tr><td>Hình thức</td><td>Chơi tại net hoặc chơi ở nhà (xem mục 3)</td></tr>
+    <tr><td>Ngân sách</td><td>Khoảng 6.000.000đ</td></tr>
+    <tr><td>Truyền thông</td><td>Poster, bảng đấu, livestream chung kết</td></tr>
+  </table></div>
+</section>
+
+<section id="the-thuc">
+  <h2><small>MỤC 1</small>Lựa chọn thể thức</h2>
+  <p>Khuyến nghị phương án B, vì ARAM chọn tướng ngẫu nhiên: thua một trận rồi bị loại thì nhiều đội chưa kịp thể hiện. Phương án A hợp hơn nếu công ty chỉ có một buổi tối.</p>
+  <div class="tw"><table>
+    <tr><th></th><th>A – Loại trực tiếp</th><th>B – Vòng bảng + Playoffs (đề xuất)</th></tr>
+    <tr><td>Cấu trúc</td><td>8 đội vào tứ kết</td><td>2 bảng × 4 đội, top 2 mỗi bảng vào bán kết</td></tr>
+    <tr><td>Số trận tối thiểu/đội</td><td>1</td><td>3</td></tr>
+    <tr><td>Thể thức trận</td><td>Tứ kết BO1, bán kết BO1, chung kết BO3</td><td>Vòng bảng BO1, bán kết BO1, chung kết BO3</td></tr>
+    <tr><td>Tranh hạng ba</td><td>Tùy chọn</td><td>Có, BO1</td></tr>
+    <tr><td>Tổng số trận</td><td>8–10</td><td>17–18</td></tr>
+    <tr><td>Thời lượng</td><td>Một buổi tối</td><td>2 buổi</td></tr>
+    <tr><td>Ưu điểm</td><td>Gọn, dễ triển khai</td><td>Nhiều giao lưu, công bằng hơn</td></tr>
+  </table></div>
+</section>
+
+<section id="so-do">
+  <h2><small>MỤC 2</small>Sơ đồ thi đấu</h2>
+  <p>Hai bảng, mỗi bảng 4 đội đá vòng tròn một lượt; hai đội đứng đầu mỗi bảng vào bán kết.</p>
+  <div class="groups">
+    <div class="grp"><h3>Bảng A</h3><ul><li>Đội A1</li><li>Đội A2</li><li>Đội A3</li><li>Đội A4</li></ul></div>
+    <div class="grp"><h3>Bảng B</h3><ul><li>Đội B1</li><li>Đội B2</li><li>Đội B3</li><li>Đội B4</li></ul></div>
+  </div>
+  <h3>Playoffs</h3>
+  <div class="bracket">
+    <div class="m"><i>Bán kết 1 · BO1</i>Nhất A vs Nhì B</div>
+    <div class="m"><i>Bán kết 2 · BO1</i>Nhất B vs Nhì A</div>
+    <div class="m"><i>Tranh hạng ba · BO1</i>Hai đội thua bán kết</div>
+    <div class="m final" style="grid-column:1/-1"><i>Chung kết · BO3</i>Hai đội thắng bán kết, thắng 2 trận là vô địch</div>
+  </div>
+  <h3>Quy định vòng bảng</h3>
+  <ul class="plain">
+    <li>Thắng được 1 điểm, thua được 0 điểm.</li>
+    <li>Mỗi đội gặp 3 đội còn lại trong bảng đúng một lần.</li>
+    <li>Xếp hạng theo số trận thắng, sau đó đến kết quả đối đầu nếu chỉ có hai đội bằng điểm.</li>
+    <li>Nếu ba đội cùng điểm và không phân định được bằng đối đầu, tổ chức tie-break theo quy định công bố trước giải.</li>
+  </ul>
+</section>
+
+<section id="lich">
+  <h2><small>MỤC 3</small>Lịch trình tổ chức</h2>
+  <p>Vì không thể tổ chức trong giờ hành chính, toàn bộ giải diễn ra vào buổi tối sau giờ làm (bắt đầu 18:30). Có hai phương án địa điểm, dùng chung một lịch thi đấu; BTC chốt một phương án khi xin phê duyệt (D-14). Giả định có 2 phòng custom chạy song song, mỗi trận 20–30 phút cộng khoảng 10 phút chuẩn bị và xử lý kết quả.</p>
+  <div class="cmp">
+    <div><span class="tag">Phương án 1</span><h3 style="margin:0">Chơi tại net</h3>
+      <ul><li>Tập trung tại quán net, thuê khu máy buổi tối.</li><li>Trọng tài có mặt trực tiếp tại từng phòng.</li><li>Cần 20 máy chơi đồng thời cho 2 trận, đặt chỗ trước.</li><li>Phát sinh tiền thuê máy, chưa nằm trong dự toán 6 triệu.</li></ul></div>
+    <div class="pick"><span class="tag">Phương án 2</span><h3 style="margin:0">Chơi ở nhà</h3>
+      <ul><li>Mỗi người chơi bằng máy cá nhân tại nhà.</li><li>Trọng tài và BTC điều phối qua Discord/Zoom, mỗi đội một kênh thoại riêng.</li><li>Cần kiểm tra cấu hình và đường truyền từng người.</li><li>Gần như không phát sinh chi phí; có thể chạy 3–4 phòng để rút ngắn buổi thi đấu.</li></ul></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Chọn buổi">
+    <button role="tab" id="tab1" aria-selected="true" aria-controls="p1">Buổi 1 · Vòng bảng</button>
+    <button role="tab" id="tab2" aria-selected="false" aria-controls="p2">Buổi 2 · Chung kết</button>
+  </div>
+  <div id="p1" role="tabpanel" aria-labelledby="tab1">
+    <div class="tw"><table>
+      <tr><th>Thời gian</th><th>Phòng 1</th><th>Phòng 2</th></tr>
+      <tr><td class="t">18:30–18:50</td><td>Check-in, khai mạc (net: tập trung tại quán; nhà: qua Discord)</td><td>Kiểm tra thiết bị (net) hoặc kết nối, mic, Riot Client (nhà)</td></tr>
+      <tr><td class="t">18:50–19:30</td><td>A1 vs A2</td><td>B1 vs B2</td></tr>
+      <tr><td class="t">19:30–20:10</td><td>A3 vs A4</td><td>B3 vs B4</td></tr>
+      <tr><td class="t">20:10–20:50</td><td>A1 vs A3</td><td>B1 vs B3</td></tr>
+      <tr><td class="t">20:50–21:30</td><td>A2 vs A4</td><td>B2 vs B4</td></tr>
+      <tr><td class="t">21:30–22:10</td><td>A1 vs A4</td><td>B1 vs B4</td></tr>
+      <tr><td class="t">22:10–22:50</td><td>A2 vs A3</td><td>B2 vs B3</td></tr>
+      <tr><td class="t">22:50–23:10</td><td>Chốt bảng xếp hạng</td><td>Công bố bán kết</td></tr>
+    </table></div>
+    <div class="note">Buổi 1 kết thúc khá muộn (khoảng 23:10). Nếu chơi ở nhà, nên chạy 3–4 phòng song song hoặc tách vòng bảng thành hai tối để mọi người không phải thức khuya. Lịch chưa tính các trận tie-break phát sinh; cần quy định rõ tiêu chí phụ trước giải.</div>
+    <p>Khi thi đấu tại nhà: mỗi đội vào một kênh thoại riêng, trọng tài ở lại kênh chung để xử lý sự cố; đội trưởng báo cáo kết quả kèm ảnh chụp màn hình kết thúc trận; cho phép nghỉ 5 phút giữa các lượt để người chơi xử lý lỗi mạng.</p>
+  </div>
+  <div id="p2" role="tabpanel" aria-labelledby="tab2" hidden>
+    <div class="tw"><table>
+      <tr><th>Thời gian</th><th>Hoạt động</th></tr>
+      <tr><td class="t">18:30–18:45</td><td>Check-in 4 đội, kiểm tra thiết bị hoặc kết nối</td></tr>
+      <tr><td class="t">18:45–19:30</td><td>2 trận bán kết BO1 song song</td></tr>
+      <tr><td class="t">19:40–20:20</td><td>Tranh hạng ba BO1</td></tr>
+      <tr><td class="t">20:30–22:30</td><td>Chung kết BO3 (tối đa 3 game)</td></tr>
+      <tr><td class="t">22:30–22:50</td><td>Trao giải, chụp ảnh tập thể (net: chụp tại chỗ; nhà: chụp màn hình họp)</td></tr>
+    </table></div>
+    <p>Nếu có điều kiện, livestream riêng trận chung kết với bình luận viên nội bộ.</p>
+  </div>
+</section>
+
+<section id="dieu-le">
+  <h2><small>MỤC 4</small>Điều lệ giải đấu</h2>
+  <p>Các nội dung dưới đây cần chốt thành văn bản và gửi cho toàn bộ đội trưởng trước ngày thi đấu.</p>
+  <div class="tw"><table>
+    <tr><th>Hạng mục</th><th>Quy định đề xuất</th></tr>
+    <tr><td>Thành viên</td><td>5 chính thức, tối đa 2 dự bị/đội</td></tr>
+    <tr><td>Tài khoản</td><td>Riot ID cá nhân trên cùng máy chủ phù hợp</td></tr>
+    <tr><td>Chế độ</td><td>Custom Game – ARAM 5v5, chọn tướng ngẫu nhiên</td></tr>
+    <tr><td>Phiên bản</td><td>Theo bản cập nhật đang dùng tại ngày thi đấu</td></tr>
+    <tr><td>Điều kiện thắng</td><td>Phá hủy Nexus của đối thủ</td></tr>
+    <tr><td>Đổi thành viên</td><td>Chỉ giữa các trận, không đổi giữa trận</td></tr>
+    <tr><td>Đổi đội</td><td>Không cho phép sau khi chốt danh sách</td></tr>
+    <tr><td>Đúng giờ</td><td>Trễ hơn 10 phút so với lúc trọng tài gọi vào phòng có thể bị xử thua</td></tr>
+    <tr><td>Gian lận</td><td>Không dùng phần mềm can thiệp trái phép, không nhờ người ngoài đánh hộ</td></tr>
+    <tr><td>Ứng xử</td><td>Cấm xúc phạm, quấy rối, cố tình phá trận</td></tr>
+    <tr><td>Khiếu nại</td><td>Đội trưởng gửi bằng chứng cho BTC trong 10 phút sau trận</td></tr>
+  </table></div>
+  <div class="note">Lưu ý về ARAM: Riot đã áp dụng hệ thống Thẻ Tướng thay cho cách chọn lại tướng cũ và có nhiều bản đồ ARAM (theo League of Legends Support). Dùng tính năng ngẫu nhiên mặc định của game, không can thiệp thủ công.</div>
+  <h3>Quy tắc xử lý sự cố</h3>
+  <div class="tw"><table>
+    <tr><th>Tình huống</th><th>Cách xử lý</th></tr>
+    <tr><td>Mất kết nối</td><td>Người chơi kết nối lại; trọng tài quyết định có dừng hoặc tổ chức lại trận không</td></tr>
+    <tr><td>Lỗi ngay khi bắt đầu</td><td>Có thể đánh lại nếu lỗi kỹ thuật nghiêm trọng xảy ra trước giao tranh đáng kể, có xác nhận của trọng tài</td></tr>
+    <tr><td>Lỗi máy chủ ảnh hưởng cả hai đội</td><td>Có thể tổ chức trận mới</td></tr>
+    <tr><td>Thoát trận có chủ đích hoặc gian lận</td><td>BTC có quyền xử thua sau khi xem xét bằng chứng</td></tr>
+    <tr><td>Trận kéo dài</td><td>Không tự động xử thắng bằng số mạng hạ gục; chừa lịch dự phòng</td></tr>
+  </table></div>
+  <p>Nên chạy thử ít nhất một trận ARAM tùy chọn đủ 10 người trước khi công bố điều lệ chính thức.</p>
+</section>
+
+<section id="nhan-su">
+  <h2><small>MỤC 5</small>Nhân sự và thiết bị</h2>
+  <p>BTC cần khoảng 4–6 người; nếu đấu tập trung cần 20 máy chơi đồng thời cho 2 trận.</p>
+  <div class="tw"><table>
+    <tr><th>Hạng mục</th><th>Yêu cầu</th></tr>
+    <tr><td>Ban tổ chức</td><td>1 trưởng BTC điều phối, 2 trọng tài/phòng đấu, 1 nhân sự IT, 1 người phụ trách truyền thông hoặc MC; có thể kiêm nhiệm</td></tr>
+    <tr><td>Hệ thống thi đấu</td><td>Phương án 1 (net): thuê khu máy buổi tối, 20 máy chơi + máy điều phối, đặt chỗ trước. Phương án 2 (nhà): mỗi người dùng máy cá nhân, vào phòng custom theo hướng dẫn của trọng tài qua Discord/Zoom</td></tr>
+    <tr><td>Mạng và phần mềm</td><td>Kiểm tra máy chủ, ping, đăng nhập Riot Client, mạng nội bộ, phần mềm ghi hình, chế độ khán giả; đặc biệt là firewall của mạng công ty</td></tr>
+    <tr><td>Truyền thông</td><td>Bảng đấu cập nhật trực tiếp, ảnh đội hình, poster, OBS nếu livestream, màn chiếu cho khán giả</td></tr>
+  </table></div>
+  <p>Không để các đội đang thi đấu nhìn được màn hình có thông tin đối thủ.</p>
+</section>
+
+<section id="ngan-sach">
+  <h2><small>MỤC 6</small>Dự toán ngân sách</h2>
+  <p>Tổng dự toán 6.000.000đ áp dụng cho phương án 2 (chơi ở nhà), dùng thiết bị sẵn có. Nếu chọn phương án 1 (chơi tại net), cần cộng thêm tiền thuê máy buổi tối theo báo giá của quán, hoặc cắt giảm giải thưởng và khoản dự phòng.</p>
+  <div class="bud">
+    <div class="row"><span>Giải nhất</span><span class="bar"><i style="width:100%"></i></span><span>2.000.000</span></div>
+    <div class="row"><span>Giải nhì</span><span class="bar"><i style="width:60%"></i></span><span>1.200.000</span></div>
+    <div class="row"><span>Giải ba</span><span class="bar"><i style="width:30%"></i></span><span>600.000</span></div>
+    <div class="row"><span>Giải cá nhân do khán giả bình chọn</span><span class="bar"><i style="width:10%"></i></span><span>200.000</span></div>
+    <div class="row"><span>Nước uống, đồ ăn nhẹ</span><span class="bar"><i style="width:60%"></i></span><span>1.200.000</span></div>
+    <div class="row"><span>Poster, in ấn, phụ kiện</span><span class="bar"><i style="width:15%"></i></span><span>300.000</span></div>
+    <div class="row"><span>Dự phòng</span><span class="bar"><i style="width:25%"></i></span><span>500.000</span></div>
+    <div class="row"><span>Tổng cộng</span><span></span><span>6.000.000</span></div>
+  </div>
+  <p>Các con số là mức phân bổ đề xuất, không phải báo giá; chưa gồm thuê máy, phòng net hay thiết bị livestream. Có thể thêm giải tinh thần: đội có tên sáng tạo nhất, đội được yêu thích nhất, pha xử lý được bình chọn nhiều nhất.</p>
+</section>
+
+<section id="trien-khai">
+  <h2><small>MỤC 7–8</small>Kế hoạch triển khai</h2>
+  <p>Bắt đầu chuẩn bị từ 14 ngày trước ngày thi đấu (D).</p>
+  <ol class="tl">
+    <li><b>D-14</b><strong>Xin phê duyệt:</strong> chốt ngân sách, phương án net hoặc nhà, ngày tổ chức, địa điểm và người phụ trách.</li>
+    <li><b>D-10</b><strong>Mở đăng ký:</strong> gửi thông báo qua nhóm công ty, thu thập danh sách đội và Riot ID thành viên.</li>
+    <li><b>D-7</b><strong>Chốt danh sách 8 đội:</strong> kiểm tra thông tin, công bố điều lệ, thể thức và giải thưởng.</li>
+    <li><b>D-5</b><strong>Bốc thăm chia bảng:</strong> bốc thăm công khai, công bố lịch thi đấu và các cặp đấu.</li>
+    <li><b>D-3</b><strong>Chạy thử kỹ thuật:</strong> tạo phòng ARAM, kiểm tra mạng, máy thi đấu, trọng tài, chế độ khán giả và livestream.</li>
+    <li><b>D-1</b><strong>Xác nhận sẵn sàng:</strong> đội trưởng xác nhận đủ người; BTC chuẩn bị bảng kết quả, kênh liên lạc và phương án dự phòng.</li>
+    <li><b>Ngày thi đấu</b><strong>Vận hành giải:</strong> check-in, tổ chức trận, ghi nhận kết quả, xử lý khiếu nại và trao giải.</li>
+    <li><b>D+1</b><strong>Tổng kết:</strong> đăng kết quả, hình ảnh, trao thưởng còn lại và thu thập phản hồi.</li>
+  </ol>
+  <h3>Thông tin thu thập khi đăng ký</h3>
+  <p>Dùng một Google Form cho đội trưởng đăng ký, tổng hợp vào Google Sheets. Các trường cần có:</p>
+  <ul class="plain">
+    <li>Tên đội và phòng ban.</li><li>Họ tên, Riot ID của đội trưởng.</li><li>Danh sách 5 thành viên chính thức và tối đa 2 dự bị.</li><li>Khả năng tham gia các khung giờ dự kiến.</li><li>Người liên hệ khi xảy ra sự cố.</li><li>Xác nhận đã đọc và đồng ý với điều lệ.</li>
+  </ul>
+  <p>Bảng quản lý nên có các sheet: Teams, Members, Matches, Standings, Results, Budget.</p>
+</section>
+
+<section id="checklist">
+  <h2><small>MỤC 9</small>Checklist quyết định của BTC</h2>
+  <ul class="chk" id="chk">
+    <li><label><input type="checkbox"><span>Đã được duyệt ngân sách và lịch tổ chức</span></label></li>
+    <li><label><input type="checkbox"><span>Đã chọn phương án thi đấu buổi tối: chơi tại net hay chơi ở nhà</span></label></li>
+    <li><label><input type="checkbox"><span>Đã chọn thể thức loại trực tiếp hoặc vòng bảng</span></label></li>
+    <li><label><input type="checkbox"><span>Đã có báo giá và đặt chỗ quán net (nếu chọn chơi tại net)</span></label></li>
+    <li><label><input type="checkbox"><span>Đã chốt điều lệ và cách xử lý hòa điểm</span></label></li>
+    <li><label><input type="checkbox"><span>Đã có đủ danh sách đội và đội trưởng</span></label></li>
+    <li><label><input type="checkbox"><span>Đã phân công trọng tài, IT và truyền thông</span></label></li>
+    <li><label><input type="checkbox"><span>Đã kiểm thử phòng ARAM và đường truyền</span></label></li>
+    <li><label><input type="checkbox"><span>Đã chuẩn bị phần thưởng và phương án dự phòng</span></label></li>
+  </ul>
+  <div class="note"><strong>Lưu ý quy định của Riot:</strong> Riot đã cập nhật hướng dẫn tổ chức giải cộng đồng ngày 03/08/2026 (theo <a href="https://lolesports.com/en-US/news/lol-esports-community-competition-guidelines" target="_blank" rel="noopener">Lolesports – Quy định tổ chức giải của Riot Games</a>), trong đó các thương hiệu doanh nghiệp không phải đơn vị tổ chức giải chuyên nghiệp bị loại khỏi giấy phép giải cộng đồng và phải làm việc trực tiếp với Riot. Trang này không nói rõ về giải nội bộ không công khai, nên nếu công ty đứng tên tổ chức, nhất là khi livestream công khai hoặc có nhà tài trợ, cần xác minh với Riot trước khi triển khai.</div>
+</section>
+<footer>FSS ARAM Championship 2026 · Bản đề xuất cho BTC</footer>
+</div>
+
+<script>
+(function(){
+  var t1=document.getElementById('tab1'),t2=document.getElementById('tab2'),p1=document.getElementById('p1'),p2=document.getElementById('p2');
+  function show(n){var a=n===1;t1.setAttribute('aria-selected',a);t2.setAttribute('aria-selected',!a);p1.hidden=!a;p2.hidden=a;}
+  t1.onclick=function(){show(1)};t2.onclick=function(){show(2)};
+  var boxes=document.querySelectorAll('#chk input'),KEY='aram2026-chk';
+  try{var s=JSON.parse(localStorage.getItem(KEY)||'[]');boxes.forEach(function(b,i){b.checked=!!s[i]});}catch(e){}
+  boxes.forEach(function(b){b.addEventListener('change',function(){try{localStorage.setItem(KEY,JSON.stringify([].map.call(boxes,function(x){return x.checked})))}catch(e){}})});
+})();
+</script>
+
+</body></html>
